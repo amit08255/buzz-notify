@@ -185,6 +185,14 @@ Notify({
    */
   position?: Position;
   /**
+   * custom top position for notification
+   */
+  top?: number;
+  /**
+   * maximum limit of notifications (optional)
+   */
+  limit?: number;
+  /**
    * Auto close notification. Set in ms (milliseconds). If the duration is a negative number, the notification will not be removed.
    * @defaultvalue 3000
    */
