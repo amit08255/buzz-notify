@@ -82,6 +82,10 @@ const TRANSITION_DURATION = 400;
 const clearNotifications = (selector, limit) => {
     const elements = document.querySelectorAll<HTMLElement>(selector);
 
+    if (elements.length < limit) {
+        return;
+    }
+
     for (let i = 0; i < elements.length && i < limit; i += 1) {
         elements[i].style.display = 'none';
     }
